@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  --light-red: #ff525d;
+  --very-light-red: #ff7a85;
+  --very-dark-blue: #1f3f5b;
+  --very-dark-desaturated: #3f4164;
+  --docwidth: 90%;
+}
+
+img,
+input {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  width: var(--docwidth);
+  margin: auto;
+  font-weight: 600;
+}
+header p {
+  width: var(--docwidth);
+  margin: auto;
+}
+/*
+██╗  ██╗███████╗ █████╗ ██████╗ ███████╗██████╗     ███████╗████████╗    ███╗   ██╗ █████╗ ██╗   ██╗    
+██║  ██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗    ██╔════╝╚══██╔══╝    ████╗  ██║██╔══██╗██║   ██║    
+███████║█████╗  ███████║██║  ██║█████╗  ██████╔╝    █████╗     ██║       ██╔██╗ ██║███████║██║   ██║    
+██╔══██║██╔══╝  ██╔══██║██║  ██║██╔══╝  ██╔══██╗    ██╔══╝     ██║       ██║╚██╗██║██╔══██║╚██╗ ██╔╝    
+██║  ██║███████╗██║  ██║██████╔╝███████╗██║  ██║    ███████╗   ██║       ██║ ╚████║██║  ██║ ╚████╔╝     
+╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚══════╝   ╚═╝       ╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝      
+                                                                                                            
+*/
+
+header {
+  color: #fff;
+  height: 80vh;
+  background-color: #ff525d;
+  background-color: linear-gradient(337deg, #ff525d 0%, #ff7a85 80%);
+  background-color: -webkit-linear-gradient(337deg, #ff525d 0%, #ff7a85 80%);
+  background-color: -moz-linear-gradient(337deg, #ff525d 0%, #ff7a85 80%);
+  background-image: url(../images/bg-pattern-intro-mobile.svg);
+  background-position: 35% 37%;
+  background-size: 343%;
+  background-repeat: no-repeat;
+  border-radius: 0px 0px 0px 83px;
+  -webkit-border-radius: 0px 0px 0px 83px;
+  -moz-border-radius: 0px 0px 0px 83px;
+}
+h1 {
+  width: var(--docwidth);
+  margin: auto;
+  text-align: center;
+  font-weight: 600;
+}
+header p {
+  width: var(--docwidth);
+  margin: auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+.btn {
+  border-radius: 45px;
+  border: #ffffff solid 0.05rem;
+  background: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  font-family: "Ubuntu" sans-serif;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem;
+  font-weight: 600;
+}
+.btn:hover {
+  border-radius: 45px;
+  border: #ffffff solid 0.05rem;
+  background: rgb(255, 255, 255);
+  color: var(--light-red);
+  font-family: "Ubuntu" sans-serif;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem;
+  font-weight: 600;
+}
+.btn-active {
+  border-radius: 45px;
+  border: #ffffff solid 0.05rem;
+  background: rgb(255, 255, 255);
+  color: var(--light-red);
+  font-family: "Ubuntu" sans-serif;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem;
+  font-weight: 600;
+}
+h1 ~ div {
+  display: flex;
+  justify-content: center;
+}
+/*
+███╗   ███╗ █████╗ ██╗███╗   ██╗    ███████╗███████╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗
+████╗ ████║██╔══██╗██║████╗  ██║    ██╔════╝██╔════╝██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║
+██╔████╔██║███████║██║██╔██╗ ██║    ███████╗█████╗  ██║        ██║   ██║██║   ██║██╔██╗ ██║
+██║╚██╔╝██║██╔══██║██║██║╚██╗██║    ╚════██║██╔══╝  ██║        ██║   ██║██║   ██║██║╚██╗██║
+██║ ╚═╝ ██║██║  ██║██║██║ ╚████║    ███████║███████╗╚██████╗   ██║   ██║╚██████╔╝██║ ╚████║
+╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝    ╚══════╝╚══════╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ */
+
+main {
+  /* Attention un width en vw (exemple: width: 100 vw;) ne tient pas compte du box-sizing:border-box */
+  width: 100%;
+  overflow: hidden;
+}
+#design,
+#design-bis {
+  text-align: center;
+  width: var(--docwidth);
+  margin: auto;
+}
+#design h2 {
+  padding: 3rem 0;
+}
+#design h3,
+#design-bis h3 {
+  padding: 1.5rem 0;
+}
+#design p,
+#design-bis p {
+  line-height: 1.5rem;
+}
+#design-bis div {
+  margin-top: 5rem;
+}
+#design-bis img {
+  transform: scale(140%);
+}
+
+/* 
+███████╗███████╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗    ███████╗ ██████╗ ████████╗ █████╗     
+██╔════╝██╔════╝██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║    ██╔════╝██╔═══██╗╚══██╔══╝██╔══██╗    
+███████╗█████╗  ██║        ██║   ██║██║   ██║██╔██╗ ██║    ███████╗██║   ██║   ██║   ███████║    
+╚════██║██╔══╝  ██║        ██║   ██║██║   ██║██║╚██╗██║    ╚════██║██║   ██║   ██║   ██╔══██║    
+███████║███████╗╚██████╗   ██║   ██║╚██████╔╝██║ ╚████║    ███████║╚██████╔╝   ██║   ██║  ██║    
+╚══════╝╚══════╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝    ╚══════╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝    
+*/
+#sota {
+  position: relative;
+  color: white;
+  text-align: center;
+  /* Ctrl + F2 permet de selectionner toutes les occurences d'une même selection */
+  border-radius: 0px 82px 0px 82px;
+  -webkit-border-radius: 0px 82px 0px 82px;
+  -moz-border-radius: 0px 82px 0px 82px;
+  background-color: #1f3f5b;
+  background-color: linear-gradient(337deg, #1f3f5b 0%, #3f4164 80%);
+  background-color: -webkit-linear-gradient(337deg, #1f3f5b 0%, #3f4164 80%);
+  background-color: -moz-linear-gradient(337deg, #1f3f5b 0%, #3f4164 80%);
+  background-image: url(../images/bg-pattern-circles.svg);
+  background-position: 35% 37%;
+  background-size: 343%;
+  background-repeat: no-repeat;
+  margin-top: 15rem;
+}
+#sota div {
+  position: absolute;
+  top: -38%;
+}
+#sota h2 {
+  width: var(--docwidth);
+  margin: auto;
+  padding-top: 13rem;
+}
+
+#sota p {
+  line-height: 1.5rem;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 12rem;
+}
+
+/*
+ ███████╗ ██████╗  ██████╗ ████████╗███████╗██████╗ 
+ ██╔════╝██╔═══██╗██╔═══██╗╚══██╔══╝██╔════╝██╔══██╗
+ █████╗  ██║   ██║██║   ██║   ██║   █████╗  ██████╔╝
+ ██╔══╝  ██║   ██║██║   ██║   ██║   ██╔══╝  ██╔══██╗
+ ██║     ╚██████╔╝╚██████╔╝   ██║   ███████╗██║  ██║
+ ╚═╝      ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝
+*/
+
+footer {
+  background-color: var(--very-dark-blue);
+  border-radius: 0px 82px 0px 0px;
+  -webkit-border-radius: 0px 82px 0px 0px;
+  -moz-border-radius: 0px 82px 0px 0px;
+  margin-top: 5rem;
+}
+#menu-footer {
+  width: hsl(240, 10%, 16%);
+  margin: auto;
+  padding: 3rem;
+  color: white;
+  text-align: center;
+}
+#logo-footer {
+  padding: 30%;
+}
+#menu-footer ul {
+  list-style-type: none;
+  font-weight: 900;
+  padding: 1rem;
+  font-family: "Ubuntu" sans-serif;
+}
+#menu-footer li {
+  font-weight: 900;
+  padding: 0.2rem;
+  font-family: "Ubuntu" sans-serif;
+}
+
+/* 
+███╗   ███╗███████╗██████╗ ██╗ █████╗      ██████╗ ██╗   ██╗███████╗██████╗ ██╗███████╗███████╗
+████╗ ████║██╔════╝██╔══██╗██║██╔══██╗    ██╔═══██╗██║   ██║██╔════╝██╔══██╗██║██╔════╝██╔════╝
+██╔████╔██║█████╗  ██║  ██║██║███████║    ██║   ██║██║   ██║█████╗  ██████╔╝██║█████╗  ███████╗
+██║╚██╔╝██║██╔══╝  ██║  ██║██║██╔══██║    ██║▄▄ ██║██║   ██║██╔══╝  ██╔══██╗██║██╔══╝  ╚════██║
+██║ ╚═╝ ██║███████╗██████╔╝██║██║  ██║    ╚██████╔╝╚██████╔╝███████╗██║  ██║██║███████╗███████║
+╚═╝     ╚═╝╚══════╝╚═════╝ ╚═╝╚═╝  ╚═╝     ╚══▀▀═╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝
+                                                                                               
+ */
+
+/*
+ ███████╗███████╗ ██████╗     ██████╗ ██╗  ██╗
+ ██╔════╝╚════██║██╔════╝     ██╔══██╗╚██╗██╔╝
+ ███████╗    ██╔╝███████╗     ██████╔╝ ╚███╔╝ 
+ ╚════██║   ██╔╝ ██╔═══██╗    ██╔═══╝  ██╔██╗ 
+ ███████║   ██║  ╚██████╔╝    ██║     ██╔╝ ██╗
+ ╚══════╝   ╚═╝   ╚═════╝     ╚═╝     ╚═╝  ╚═╝
+                                              
+ */
+@media screen and (min-width: 576px) {
+  body {
+    --docwidth: 75%;
+  }
+  header {
+    height: 60vh;
+    background-image: url(../images/bg-pattern-intro-desktop.svg);
+    background-position: 35% 37%;
+    background-size: 150%;
+  }
+  #innerdesign {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #innerdesign div,#innerdesign-bis div {
+    width: 50%;
+  }
+  #innerdesign img {
+    content: url(../images/illustration-editor-desktop.svg);
+    width: 160%;
+    transform: translateY(-20%);
+  }
+  #sota {
+    margin-top: 0;
+    display: flex;
+    height: 40vh;
+  }
+  #sota div, #sota article{
+    position: static;
+    width: 50%;
+  }
+  #sota h2{
+    padding-top: 10vh;
+  }
+
+  #sota img{
+    transform: scale(75%) translateY(-25%);
+  }
+  #innerdesign-bis{
+    display: flex;
+  }
+
+  #innerdesign-bis img{
+    content: url(../images/illustration-laptop-desktop.svg);
+    width: 140%;
+    transform: translate(-52%,-15%);
+  }
+  #innerdesign-bis p, {
+    text-align: left;
+  }
+}
