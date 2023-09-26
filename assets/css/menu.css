@@ -1,7 +1,26 @@
+/*
+███╗   ███╗███████╗███╗   ██╗██╗   ██╗
+████╗ ████║██╔════╝████╗  ██║██║   ██║
+██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║
+██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║
+██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
+╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝ 
+                                      
+*/
+/* Classe pour un toggle sur mes .submenu */
+#menu .submenu{
+  overflow: hidden;
+}
+.hide{
+  max-height: 0;
+}
+.show{
+  max-height: 500px;
+}
+
 #menu ul {
   list-style-type: none;
 }
-
 #menu {
   width: var(--docwidth);
   display: flex;
@@ -10,54 +29,66 @@
   margin: auto;
   padding: 4rem 0;
 }
-
+#menu li:hover{
+  cursor: pointer;
+}
 #check {
   display: none;
 }
-
 #check:checked~#inner-menu {
   display: flex;
   flex-direction: column;
   width: var(--docwidth);
   margin: auto;
 }
-
+#check:checked~label>img{
+    content: url(../images/icon-close.svg);
+}
 #inner-menu {
   position: absolute;
-  top: 321px;
+  top: 120px;
   color: #363636;
-  display: none;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 1rem;
-  background-color: #fff;
-  box-shadow: 0px 23px 36px -4px rgba(193, 193, 193, 0.75);
-  -webkit-box-shadow: 0px 23px 36px -4px rgba(193, 193, 193, 0.75);
-  -moz-box-shadow: 0px 23px 36px -4px rgba(193, 193, 193, 0.75);
+  display: none;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 24px 37px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 24px 37px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 24px 37px -4px rgba(0, 0, 0, 0.75);
 }
-
 #inner-menu ul,
 #inner-menu li {
-  padding: .5rem;
-  font-family: 'Ubuntu', sans-serif;
+  padding: 0.5rem;
+  font-family: "Ubuntu" sans-serif;
   font-weight: 900;
+  transition: all 0.5s;
+}
+#inner-menu ul{
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 0;
 
 }
 
-#inner-menu ul {
-  border-radius: 7px;
-  background-color: #eeeeee;
+.submenu {
+    background-color: #9c9c9c9c;
 }
-
-.submenu{
-  background-color: #9c9c9c9c;
-}
-
 #inner-menu span {
   display: inline-block;
-  padding: .2rem;
+  padding: 0.2rem;
   width: 15px;
 }
+/* 
+███╗   ███╗███████╗██████╗ ██╗ █████╗      ██████╗ ██╗   ██╗███████╗██████╗ ██╗███████╗███████╗
+████╗ ████║██╔════╝██╔══██╗██║██╔══██╗    ██╔═══██╗██║   ██║██╔════╝██╔══██╗██║██╔════╝██╔════╝
+██╔████╔██║█████╗  ██║  ██║██║███████║    ██║   ██║██║   ██║█████╗  ██████╔╝██║█████╗  ███████╗
+██║╚██╔╝██║██╔══╝  ██║  ██║██║██╔══██║    ██║▄▄ ██║██║   ██║██╔══╝  ██╔══██╗██║██╔══╝  ╚════██║
+██║ ╚═╝ ██║███████╗██████╔╝██║██║  ██║    ╚██████╔╝╚██████╔╝███████╗██║  ██║██║███████╗███████║
+╚═╝     ╚═╝╚══════╝╚═════╝ ╚═╝╚═╝  ╚═╝     ╚══▀▀═╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝
+                                                                                               
+ */
 
 /*
  ███████╗███████╗ ██████╗     ██████╗ ██╗  ██╗
@@ -78,14 +109,30 @@
     display: flex;
     background-color: #ffffff00;
     box-shadow: none;
-    width:100% ;
+    width: 100%;
   }
   #inner-menu ul {
-    display: none;
+    display: block;
+    border-radius: 5px;
   }
-  #navbtn{
+  #navbtn {
     margin-left: auto;
-    
   }
-}
+  #check:checked ~ #inner-menu{
+    flex-direction: row;
+  }
+  #menubtn1{
+    position: absolute;
+    left: 22%;
+  }
+  #menubtn2{
+    position: absolute;
+    left: 32%;
+  }
+  #menubtn3{
+    position: absolute;
+    left: 40%;
+  }
 
+  
+}

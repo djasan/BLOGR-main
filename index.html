@@ -27,11 +27,11 @@
           <img src="./assets/images/icon-hamburger.svg" alt="" />
         </label>
         <ul id="inner-menu">
-          <li>
+          <li id="menubtn1">
             Product<span
               ><img src="./assets/images/icon-arrow-dark.svg" alt=""
             /></span>
-            <ul>
+            <ul class="submenu hide">
               <li class="submenu">Overview</li>
               <li class="submenu">Pricing</li>
               <li class="submenu">Marketplace</li>
@@ -39,22 +39,22 @@
               <li class="submenu">Integrations</li>
             </ul>
           </li>
-          <li>
+          <li id="menubtn2">
             Company<span
               ><img src="./assets/images/icon-arrow-dark.svg" alt=""
             /></span>
-            <ul>
+            <ul class="submenu hide">
               <li class="submenu">About</li>
               <li class="submenu">Team</li>
               <li class="submenu">Blog</li>
               <li class="submenu">Careers</li>
             </ul>
           </li>
-          <li>
+          <li  id="menubtn3">
             Connect<span
               ><img src="./assets/images/icon-arrow-dark.svg" alt=""
             /></span>
-            <ul>
+            <ul class="submenu hide">
               <li class="submenu">Contact</li>
               <li class="submenu">Newsletter</li>
               <li class="submenu">LinkedIn</li>
@@ -105,14 +105,15 @@
         <div>
           <img src="./assets/images/illustration-phones.svg" alt="" />
         </div>
-        <article> <h2>State of the Art Infrastructure</h2>
-            <p>
-              With reliability and speed in mind, worldwide data centers provide the
-              backbone for ultra-fast connectivity. This ensures your site will load
-              instantly, no matter where your readers are, keeping your site
-              competitive.
-            </p</article>
-       
+        <article>
+          <h2>State of the Art Infrastructure</h2>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </article>
       </section>
       <section id="design-bis">
         <div id="innerdesign-bis">
@@ -145,9 +146,9 @@
           <img src="./assets/images/logo.svg" alt="" />
         </div>
         <ul id="inner-menu-footer">
-          <li>
+          <li id="menubtn1">
             Product
-            <ul>
+            <ul id="submenu hide">
               <li class="submenu-footer">Overview</li>
               <li class="submenu-footer">Pricing</li>
               <li class="submenu-footer">Marketplace</li>
@@ -155,18 +156,18 @@
               <li class="submenu-footer">Integrations</li>
             </ul>
           </li>
-          <li>
+          <li id="menubtn2">
             Company
-            <ul>
+            <ul id="submenu hide">
               <li class="submenu-footer">About</li>
               <li class="submenu-footer">Team</li>
               <li class="submenu-footer">Blog</li>
               <li class="submenu-footer">Careers</li>
             </ul>
           </li>
-          <li>
+          <li id="menubtn3">
             Connect
-            <ul>
+            <ul id="submenu hide">
               <li class="submenu-footer">Contact</li>
               <li class="submenu-footer">Newsletter</li>
               <li class="submenu-footer">LinkedIn</li>
@@ -176,4 +177,5 @@
       </nav>
     </footer>
   </body>
-</html
+  <script src="./assets/js/script.js"></script>
+</html>

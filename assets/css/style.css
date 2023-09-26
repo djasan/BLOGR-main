@@ -103,6 +103,7 @@ h1 ~ div {
   display: flex;
   justify-content: center;
 }
+
 /*
 ███╗   ███╗ █████╗ ██╗███╗   ██╗    ███████╗███████╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗
 ████╗ ████║██╔══██╗██║████╗  ██║    ██╔════╝██╔════╝██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║
@@ -254,7 +255,8 @@ footer {
     display: flex;
     flex-direction: row-reverse;
   }
-  #innerdesign div,#innerdesign-bis div {
+  #innerdesign div,
+  #innerdesign-bis div {
     width: 50%;
   }
   #innerdesign img {
@@ -267,27 +269,28 @@ footer {
     display: flex;
     height: 40vh;
   }
-  #sota div, #sota article{
+  #sota div,
+  #sota article {
     position: static;
     width: 50%;
   }
-  #sota h2{
+  #sota h2 {
     padding-top: 10vh;
   }
 
-  #sota img{
+  #sota img {
     transform: scale(75%) translateY(-25%);
   }
-  #innerdesign-bis{
+  #innerdesign-bis {
     display: flex;
   }
 
-  #innerdesign-bis img{
+  #innerdesign-bis img {
     content: url(../images/illustration-laptop-desktop.svg);
     width: 140%;
-    transform: translate(-52%,-15%);
+    transform: translate(-52%, -15%);
   }
-  #innerdesign-bis p, {
+  #innerdesign-bis p {
     text-align: left;
   }
 }
